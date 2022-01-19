@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Front End Mentor Solution](https://www.frontendmentor.io/solutions/singlepricegridcomponentmaster-qXK8fmuvo)
+- Live Site URL: [Hosted on Github](https://chris971991.github.io/single-price-grid-component-master/)
 
 ## My process
 
