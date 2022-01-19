@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+$backgroundColor: hsl(217, 36%, 73%);
+$topBackgroundColor: hsl(204, 43%, 93%);
+$cyanColor: hsl(179, 62%, 43%);
+$cyanColorLight: hsl(179, 46%, 61%);
+$buttonColor: hsl(71, 70%, 53%);
+
+$border: 1px solid red;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: $backgroundColor;
+}
+
+/* If window is larger than 700px */
+@media only screen and (min-width: 700px) {
+  .main-container {
+    width: 40rem;
+    height: 30rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $topBackgroundColor;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 16px 6px rgba($color: #000000, $alpha: 0.2);
+  }
+
+  .top-container {
+    height: 45%;
+    padding: 2rem 2rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background-color: $topBackgroundColor;
+  }
+
+  .hero-info {
+    height: 100%;
+    width: auto;
+
+    h1 {
+      color: $cyanColor;
+      margin-top: 1.5rem;
+      font-size: 2rem;
+      line-height: 0;
+    }
+
+    h2 {
+      color: $buttonColor;
+    }
+
+    p {
+      opacity: 0.6;
+    }
+  }
+
+  .bottom-container {
+    height: 55%;
+    display: flex;
+  }
+
+  .bot-left {
+    flex: 1;
+    width: 50%;
+    background-color: $cyanColor;
+    border-radius: 0 0 0 0.8rem;
+  }
+
+  .bot-left-info {
+    height: 100%;
+    padding: 2rem;
+    color: white;
+
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 0 0.8rem 0 0;
+    }
+
+    .cycle {
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    button {
+      color: white;
+      background-color: $buttonColor;
+      border-style: none;
+      border-radius: 0.3rem;
+      box-shadow: 2px 2px 16px rgba($color: #000000, $alpha: 0.3);
+      font-size: 1rem;
+      padding: 1rem 6rem;
+      transition: 0.1s ease-in-out;
+      font-weight: 700;
+    }
+
+    button:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+  }
+
+  .bot-right {
+    flex: 1;
+    width: 50%;
+    background-color: $cyanColorLight;
+    border-radius: 0 0 0.8rem 0;
+  }
+
+  .bot-right-info {
+    height: 100%;
+    padding: 2rem;
+    color: white;
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    ul {
+      font-weight: 400;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      opacity: 0.8;
+    }
+  }
+}
+
+/* If window is smaller than 700px */
+@media only screen and (max-width: 700px) {
+  .main-container {
+    width: 20rem;
+    height: 46rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $topBackgroundColor;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 16px 6px rgba($color: #000000, $alpha: 0.2);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-container {
+    height: 25%;
+    padding: 2rem 2rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background-color: $topBackgroundColor;
+  }
+
+  .hero-info {
+    height: 100%;
+    width: auto;
+
+    h1 {
+      color: $cyanColor;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      line-height: 0;
+    }
+
+    h2 {
+      color: $buttonColor;
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+      opacity: 0.6;
+    }
+  }
+
+  .bottom-container {
+    height: 100%;
+  }
+
+  .bot-left {
+    width: 100%;
+    background-color: $cyanColor;
+  }
+
+  .bot-left-info {
+    height: 100%;
+    padding: 2rem;
+    color: white;
+
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 0 0.8rem 0 0;
+    }
+
+    .cycle {
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    button {
+      color: white;
+      background-color: $buttonColor;
+      border-style: none;
+      border-radius: 0.3rem;
+      box-shadow: 2px 2px 16px rgba($color: #000000, $alpha: 0.3);
+      font-size: 1rem;
+      padding: 1rem 6rem;
+      transition: 0.1s ease-in-out;
+      font-weight: 700;
+    }
+
+    button:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+  }
+
+  .bot-right {
+    width: 100%;
+    background-color: $cyanColorLight;
+    border-radius: 0 0 0.8rem 0.8rem;
+  }
+
+  .bot-right-info {
+    height: 100%;
+    padding: 2rem;
+    color: white;
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    ul {
+      font-weight: 400;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      opacity: 0.8;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

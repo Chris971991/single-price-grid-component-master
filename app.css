@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: #a1b4d3;
+}
+
+/* If window is larger than 700px */
+@media only screen and (min-width: 700px) {
+  .main-container {
+    width: 40rem;
+    height: 30rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #e5eff5;
+    border-radius: 0.8rem;
+    -webkit-box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.2);
+  }
+  .top-container {
+    height: 45%;
+    padding: 2rem 2rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background-color: #e5eff5;
+  }
+  .hero-info {
+    height: 100%;
+    width: auto;
+  }
+  .hero-info h1 {
+    color: #2ab2af;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    line-height: 0;
+  }
+  .hero-info h2 {
+    color: #bcdb33;
+  }
+  .hero-info p {
+    opacity: 0.6;
+  }
+  .bottom-container {
+    height: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bot-left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 50%;
+    background-color: #2ab2af;
+    border-radius: 0 0 0 0.8rem;
+  }
+  .bot-left-info {
+    height: 100%;
+    padding: 2rem;
+    color: white;
+  }
+  .bot-left-info h2 {
+    font-size: 1.1rem;
+  }
+  .bot-left-info .price {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 0.8rem 0 0;
+  }
+  .bot-left-info .cycle {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  .bot-left-info button {
+    color: white;
+    background-color: #bcdb33;
+    border-style: none;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    padding: 1rem 6rem;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+    font-weight: 700;
+  }
+  .bot-left-info button:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    cursor: pointer;
+  }
+  .bot-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 50%;
+    background-color: #6ec9c8;
+    border-radius: 0 0 0.8rem 0;
+  }
+  .bot-right-info {
+    height: 100%;
+    padding: 2rem;
+    color: white;
+  }
+  .bot-right-info h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .bot-right-info ul {
+    font-weight: 400;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0.8;
+  }
+}
+
+/* If window is smaller than 700px */
+@media only screen and (max-width: 700px) {
+  .main-container {
+    width: 20rem;
+    height: 46rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #e5eff5;
+    border-radius: 0.8rem;
+    -webkit-box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top-container {
+    height: 25%;
+    padding: 2rem 2rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background-color: #e5eff5;
+  }
+  .hero-info {
+    height: 100%;
+    width: auto;
+  }
+  .hero-info h1 {
+    color: #2ab2af;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 0;
+  }
+  .hero-info h2 {
+    color: #bcdb33;
+    font-size: 1rem;
+  }
+  .hero-info p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    opacity: 0.6;
+  }
+  .bottom-container {
+    height: 100%;
+  }
+  .bot-left {
+    width: 100%;
+    background-color: #2ab2af;
+  }
+  .bot-left-info {
+    height: 100%;
+    padding: 2rem;
+    color: white;
+  }
+  .bot-left-info h2 {
+    font-size: 1.1rem;
+  }
+  .bot-left-info .price {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 0.8rem 0 0;
+  }
+  .bot-left-info .cycle {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  .bot-left-info button {
+    color: white;
+    background-color: #bcdb33;
+    border-style: none;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    padding: 1rem 6rem;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+    font-weight: 700;
+  }
+  .bot-left-info button:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+    cursor: pointer;
+  }
+  .bot-right {
+    width: 100%;
+    background-color: #6ec9c8;
+    border-radius: 0 0 0.8rem 0.8rem;
+  }
+  .bot-right-info {
+    height: 100%;
+    padding: 2rem;
+    color: white;
+  }
+  .bot-right-info h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .bot-right-info ul {
+    font-weight: 400;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0.8;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=app.css.map */
